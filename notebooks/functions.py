@@ -195,9 +195,22 @@ def transform_train(trainds, var):
 
 def transform_val_test(val_test, scaler_train, is_prec=True):
     """
-    Input (example): ds_val_apcp.tp, scaler_train, True/False
-    Output: Transformed validation/test XR data
-    If is_prec set to True, variable is precipitation
+    Transforms the validation/test dataset using a given scaler.
+
+    This function reshapes the input dataset, applies a logarithmic transformation 
+    if the data represents precipitation, and then scales the data using the provided scaler.
+    The transformed data is reshaped back to its original dimensions.
+
+    if the input data isnt precipitation, it is reshaped and scaled using the provided scaler.
+
+    Parameters:
+    val_test (xarray.DataArray): The validation/test dataset to be transformed.
+    scaler_train (sklearn.preprocessing.StandardScaler): The scaler fitted on the training data.
+    is_prec (bool): A flag indicating whether the variable is precipitation. 
+                    If True, a logarithmic transformation is applied before scaling.
+
+    Returns:
+    xarray.DataArray: The transformed validation/test dataset.
     """
     if is_prec:
         x_one_col = val_test.values.reshape(

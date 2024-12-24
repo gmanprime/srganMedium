@@ -1,0 +1,29 @@
+{
+    "cSpell.words": [
+        "apcp",
+        "basemap",
+        "cartopy",
+        "ccrs",
+        "crossentropy",
+        "densitites",
+        "edgecolor",
+        "facecolor",
+        "GEFS",
+        "handleheight",
+        "handlelength",
+        "kernal",
+        "Kweights",
+        "Mapnik",
+        "mstats",
+        "ncol",
+        "ndarray",
+        "normaltest",
+        "prec",
+        "pvalue",
+        "Reforecast",
+        "timecheck",
+        "trainds",
+        "wcce"
+    ],
+    "python.defaultInterpreterPath": "~/.conda/envs/thesis_env/bin/python"
+}
