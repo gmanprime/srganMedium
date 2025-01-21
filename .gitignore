@@ -1,4 +1,4 @@
-Data/GEFSv12-Reforecast_pwat_p01.nc
+*.nc
 Data/X_test_ensemble.npy
 Data/X_train_ensemble.npy
 Data/X_val_ensemble.npy
@@ -17,3 +17,5 @@ model/Data/y_class_val.npy
 model/Data/y_hr_test.npy
 model/Data/y_hr_train.npy
 model/Data/y_hr_val.npy
+
+.fake
